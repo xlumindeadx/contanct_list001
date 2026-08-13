@@ -1,5 +1,7 @@
 import 'dart:io';
 import '../lib/add.dart';
+import '../lib/listar.dart';
+import '../lib/gestionContacto.dart';
 
 // El Aprendiz 2 definirá los atributos de esta clase
 class Contacto{
@@ -30,12 +32,15 @@ void main() {
         break;
       case '2':
         // TODO: Aprendiz 2 - Implementar lógica para listar
+        listarContactos(diary);
         break;
       case '3':
         // TODO: Aprendiz 3 - Implementar lógica para buscar
+        buscarContacto(diary);
         break;
       case '4':
         // TODO: Aprendiz 3 - Implementar lógica para eliminar
+        eliminarContacto(diary);
         break;
       case '5':
         print('Saliendo de la agenda...');
